@@ -1,0 +1,89 @@
+{
+  "workspace": "Lumen Signal Studio",
+  "demoDay": "2026-06-18",
+  "month": "June 2026",
+  "exchange": 16000,
+  "monthlyCap": 2000000,
+  "defaultFuel": 24000,
+  "depths": [
+    {"id":"scan","name":"Scan","rounds":1,"detail":"A quick read across selected sources."},
+    {"id":"investigate","name":"Investigate","rounds":2,"detail":"Wider coverage for an emerging issue."},
+    {"id":"deep","name":"Deep Dive","rounds":4,"detail":"The broadest sample for a closer review."}
+  ],
+  "topics": ["Harborlight transit", "weekend service", "station access", "North Quay", "Lantern Loop", "storm readiness"],
+  "sources": [
+    {"id":"tiktok","name":"TikTok","short":"TT","price":1800,"cap":390000},
+    {"id":"x","name":"X","short":"X","price":1200,"cap":280000},
+    {"id":"instagram","name":"Instagram","short":"IG","price":1500,"cap":360000},
+    {"id":"youtube","name":"YouTube","short":"YT","price":1400,"cap":280000},
+    {"id":"facebook","name":"Facebook","short":"FB","price":1300,"cap":230000},
+    {"id":"threads","name":"Threads","short":"TH","price":1100,"cap":180000},
+    {"id":"linkedin","name":"LinkedIn","short":"LI","price":1200,"cap":180000},
+    {"id":"reddit","name":"Reddit","short":"RD","price":1100,"cap":190000},
+    {"id":"kaskus","name":"Kaskus","short":"KS","price":1000,"cap":160000},
+    {"id":"news","name":"News index","short":"NW","price":0,"cap":0}
+  ],
+  "results": [
+    {"title":"Earlier shuttle made the transfer easier","author":"Quayside Notes","tone":"Positive","theme":"Connections","detail":"The first Lantern Loop shuttle left in time for the ferry. The new timetable was easy to follow."},
+    {"title":"Step-free route needs clearer signs","author":"Harbor Steps","tone":"Concern","theme":"Accessibility","detail":"Visitors using the west entrance asked for a clearer route to the lift and the platform."},
+    {"title":"Weekend departure board is live","author":"Platform Journal","tone":"Neutral","theme":"Timetable","detail":"The board shows two extra departures for the weekend trial and a temporary stop at North Quay."},
+    {"title":"Shelter trial welcomed at East Pier","author":"Pier Walkers","tone":"Positive","theme":"Passenger experience","detail":"The new covered waiting area was in use before the morning departure."},
+    {"title":"Late arrivals missed the last connection","author":"Evening Platform","tone":"Concern","theme":"Connections","detail":"Several sample riders asked whether a short grace period could help with the final transfer."},
+    {"title":"Volunteer guides test the station map","author":"Harbor Access Circle","tone":"Neutral","theme":"Accessibility","detail":"Guides walked the temporary route and recorded two locations that could use clearer directions."},
+    {"title":"Trial timetable was shared in advance","author":"Lantern Commuters","tone":"Positive","theme":"Timetable","detail":"The sample passengers appreciated a single notice with the full service window."},
+    {"title":"Waterfront detour takes longer at dusk","author":"Riverside Riders","tone":"Concern","theme":"Passenger experience","detail":"The longer walk is manageable, but the route would benefit from lighting and better markings."}
+  ],
+  "news": [
+    {"title":"Harborlight adds departures for June pilot","author":"The Meridian Bulletin","tone":"Neutral","theme":"Timetable","detail":"A fictional pilot adds weekend departures and publishes a review date."},
+    {"title":"North Quay tests new access signs","author":"The Quay Ledger","tone":"Neutral","theme":"Accessibility","detail":"The sample report describes a two-week wayfinding trial at the west entrance."},
+    {"title":"Lantern Loop shares storm detour plan","author":"The Lantern Gazette","tone":"Positive","theme":"Passenger experience","detail":"The fictional update lists the covered waiting point and revised terminal access."},
+    {"title":"Pilot review looks at late transfers","author":"The Harbor Record","tone":"Concern","theme":"Connections","detail":"A fictional review covers the final ferry-to-shuttle connection."}
+  ],
+  "history": [
+    {"id":"DEMO-001","day":"2026-06-05","topic":"Lantern Loop","costs":{"tiktok":36000,"instagram":27000}},
+    {"id":"DEMO-002","day":"2026-06-08","topic":"North Quay","costs":{"x":24000,"youtube":28000}},
+    {"id":"DEMO-003","day":"2026-06-10","topic":"station access","costs":{"tiktok":54000,"instagram":45000,"facebook":26000}},
+    {"id":"DEMO-004","day":"2026-06-13","topic":"storm readiness","costs":{"x":36000,"threads":22000,"reddit":22000}},
+    {"id":"DEMO-005","day":"2026-06-15","topic":"Harborlight transit","costs":{"tiktok":72000,"instagram":60000,"youtube":42000,"linkedin":24000}},
+    {"id":"DEMO-006","day":"2026-06-17","topic":"weekend service","costs":{"tiktok":54000,"x":48000,"instagram":45000,"facebook":26000}},
+    {"id":"DEMO-007","day":"2026-06-18","topic":"North Quay","costs":{"tiktok":18000,"instagram":15000,"x":12000}}
+  ],
+  "issues": [
+    {"id":"harbor","title":"Harborlight transit pilot","tag":"Transport","status":"Watch","trend":[28,35,32,48,43,61,72,64,77,71,78,74],"sentiment":[48,31,21],"collectors":["tiktok","x","instagram"],"threshold":75},
+    {"id":"weekend","title":"Weekend service changes","tag":"Timetables","status":"Stable","trend":[18,22,34,29,36,38,42,38,45,44,47,46],"sentiment":[56,30,14],"collectors":["x","news"],"threshold":65},
+    {"id":"access","title":"North Quay accessibility","tag":"Accessibility","status":"Elevated","trend":[22,29,31,35,51,45,62,55,68,76,81,88],"sentiment":[24,41,35],"collectors":["instagram","facebook","news"],"threshold":72},
+    {"id":"lantern","title":"Lantern Loop wayfinding","tag":"Passenger experience","status":"Stable","trend":[21,25,20,24,32,30,36,31,40,43,46,44],"sentiment":[62,26,12],"collectors":["youtube","news"],"threshold":68},
+    {"id":"weather","title":"Storm readiness updates","tag":"Service continuity","status":"Watch","trend":[22,30,28,42,58,62,56,52,68,63,66,70],"sentiment":[34,44,22],"collectors":["x","threads","news"],"threshold":70}
+  ],
+  "issueTemplates": [
+    {"id":"ferry","title":"Ferry interchange trial","tag":"Transport","status":"Stable","trend":[12,18,14,22,20,26,29,34,31,38,35,39],"sentiment":[53,34,13],"collectors":["x","news"],"threshold":70},
+    {"id":"market","title":"Meridian Night Market access","tag":"Events","status":"Stable","trend":[11,17,15,24,23,27,33,31,38,40,37,43],"sentiment":[58,28,14],"collectors":["instagram","news"],"threshold":70},
+    {"id":"bike","title":"East Pier cycle lane","tag":"Accessibility","status":"Stable","trend":[13,14,25,19,21,23,27,29,34,31,38,41],"sentiment":[55,31,14],"collectors":["facebook","news"],"threshold":70}
+  ],
+  "people": [
+    {"id":"avery","name":"Avery Vale","email":"avery.vale@lumen.example","role":"Admin","active":true},
+    {"id":"mira","name":"Mira North","email":"mira.north@lumen.example","role":"User","active":true},
+    {"id":"rowan","name":"Rowan Quill","email":"rowan.quill@lumen.example","role":"User","active":true},
+    {"id":"jules","name":"Jules Ember","email":"jules.ember@lumen.example"},
+    {"id":"sage","name":"Sage Finch","email":"sage.finch@lumen.example"},
+    {"id":"ellis","name":"Ellis Beacon","email":"ellis.beacon@lumen.example"}
+  ],
+  "organisations": [
+    {"id":"harborlight","name":"Harborlight Transit Lab","aliases":"Harborlight, Lantern Loop"},
+    {"id":"quay","name":"North Quay Access Group","aliases":"North Quay, West Entrance"},
+    {"id":"meridian","name":"Meridian Night Market Board","aliases":"Meridian Market, Night Market"}
+  ],
+  "report": {
+    "checks": ["Sample evidence references are present", "Opinion is separated from reported observations", "Review audience and language are selected"],
+    "sections": [
+      {"en":{"title":"Executive summary","heading":"Early signals from the Harborlight pilot","body":"Fictional coverage of the pilot focused on additional weekend departures. In the sample conversations, clearer transfers drew positive reactions. Wayfinding at North Quay remained a point of concern.","recommendation":"Check the west entrance signage and publish a single timetable note before the next trial weekend."},"id":{"title":"Ringkasan eksekutif","heading":"Sinyal awal dari uji coba Harborlight","body":"Liputan fiktif menyoroti tambahan perjalanan akhir pekan. Dalam percakapan contoh, perpindahan yang lebih jelas mendapat tanggapan positif. Petunjuk arah di North Quay masih menjadi perhatian.","recommendation":"Periksa petunjuk di pintu barat dan terbitkan satu pengumuman jadwal sebelum akhir pekan uji coba berikutnya."},"evidence":["S1","S2"]},
+      {"en":{"title":"Coverage and sentiment","heading":"Service changes and passenger reactions","body":"The sample news coverage described schedule changes. Example social comments contrasted appreciation for early shuttles with requests for better lighting and access signs.","recommendation":"Track transfer reliability and accessibility separately in the next review."},"id":{"title":"Liputan dan sentimen","heading":"Perubahan layanan dan tanggapan penumpang","body":"Liputan contoh menjelaskan perubahan jadwal. Komentar sosial contoh menunjukkan apresiasi terhadap keberangkatan awal dan permintaan atas pencahayaan dan petunjuk akses yang lebih baik.","recommendation":"Pantau keandalan perpindahan dan aksesibilitas secara terpisah pada tinjauan berikutnya."},"evidence":["S1","S3"]},
+      {"en":{"title":"Actions and evidence","heading":"What to check next","body":"The sample suggests reviewing two points before the next fictional pilot: the final ferry transfer and the step-free route from the west entrance.","recommendation":"Assign a reviewer to each point and add the findings to the next issue brief."},"id":{"title":"Tindakan dan bukti","heading":"Hal yang perlu diperiksa","body":"Contoh ini menyarankan dua pemeriksaan sebelum uji coba fiktif berikutnya: perpindahan kapal terakhir dan rute bebas tangga dari pintu barat.","recommendation":"Tunjuk peninjau untuk tiap hal dan tambahkan temuannya pada ringkasan isu berikutnya."},"evidence":["S2","S3"]}
+    ],
+    "evidence": [
+      {"id":"S1","title":"Harborlight adds departures for June pilot","source":"The Meridian Bulletin","type":"Fictional news headline"},
+      {"id":"S2","title":"Step-free route needs clearer signs","source":"Harbor Steps","type":"Fictional social post"},
+      {"id":"S3","title":"Late arrivals missed the final connection","source":"Evening Platform","type":"Fictional social post"}
+    ]
+  }
+}
