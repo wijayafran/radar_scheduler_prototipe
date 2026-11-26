@@ -6,14 +6,10 @@
 
 web
 
-## Stack
-
-Static HTML and CSS, vanilla JavaScript, local JSON, hash routes, and browser-local synthetic state. The deployment target is a GitHub Pages project subdirectory.
-
 ## Purpose
 
-Give management and non-technical reviewers a way to walk through one research run and related monitoring, costs, reports, and administration flows using illustrative data.
+Let authorized internal reviewers inspect the original RADAR Sample Mode interface and its existing research presentation using a local static browser preview.
 
-## Constraints
+## Scope
 
-Use neutral branding, fictional identities and evidence, and explicit sample-data labeling. The demo has no external provider or account integrations. Publication requires explicit approval.
+The eight pages retain approved original visual content and use the existing captured Sample Mode states for navigation and replay. Internal distribution requires a separately approved hosting method.

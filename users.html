@@ -1,0 +1,78 @@
+<html data-theme="dark"><head><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RADAR Workspace</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="./assets/h/49beae011f1400dd.css">
+<link rel="stylesheet" href="./css/workspace.css">
+
+<link rel="stylesheet" href="./css/login.css">
+<script defer="" src="./js/presentation.js"></script></head><body>
+
+<div class="app">
+  <aside class="rail" aria-label="Main">
+    <div class="rail-brand"><img class="rail-edm" src="./assets/h/9632587cbbc0998a.png" alt="Enterprise Data Management"><span class="rail-div"></span><img class="rail-logo" src="./assets/h/a5e1f6f12a19b6cf.png" alt="RADAR"></div>
+    <nav class="nav" id="nav">
+      <a href="./research.html" data-v="research" aria-current="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path><path d="M11 8v3l2 1.5"></path></svg>Live research<span class="badge" id="navLive">Live</span></a>
+      <a href="./monitor.html" data-v="monitor" aria-current="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 12h4l2.5-6 5 12 2.5-6h4"></path></svg>Monitor<span class="badge" style="background:rgba(255,131,102,.16);color:#FF9F88">1</span></a>
+      <a href="./costs.html" data-v="costs" aria-current="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 10h18M7 15h4"></path></svg>Runs &amp; costs</a>
+      <a href="./reports.html" data-v="reports" aria-current="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 3h7l5 5v13H7z"></path><path d="M14 3v5h5M10 13h6M10 17h6"></path></svg>Reports</a>
+      <a href="./users.html" data-v="users" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20c.6-3.6 3.2-5.5 6.5-5.5s5.9 1.9 6.5 5.5"></path><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14.8c2 .7 3.2 2.5 3.5 5.2"></path></svg>Users</a>
+      <a href="./settings.html" data-v="settings" aria-current="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"></path></svg>Settings</a>
+    </nav>
+    <div class="rail-sec" id="railMonth">November spend</div>
+    <div class="rail-spend">
+      <div class="row"><span>Workspace cap</span><b class="num" id="railSpent">Rp 3.18M</b></div>
+      <div class="rail-meter"><i id="railMeter" style="width: 32%;"></i></div>
+      <div class="row"><span id="railOf">of Rp 10M</span><span id="railPct">32%</span></div>
+    </div>
+    <a class="rail-foot" href="./profile.html" data-v="profile" aria-label="Your profile" aria-current="false"><div class="avatar">DP</div><div class="who"><span class="me-name">Darwin Poso</span><span>Enterprise Data Management</span></div></a>
+  </aside>
+
+  <main class="main">
+    <header class="top">
+      <div class="top-in">
+        <div><h1 id="vTitle" tabindex="-1">Users</h1><div class="crumb" id="vCrumb">Who can open RADAR and what they can change</div></div>
+        <div class="top-actions">
+          <button class="sample" id="dataMode" role="switch" aria-checked="true" aria-label="Sample data" title="Sample data: no real searches, no real cost">Sample data</button>
+          <span class="fx">US$1 = Rp 16,420 · fixed rate</span>
+          <div class="seg" role="group" aria-label="Currency"><button id="curIDR" aria-pressed="true">IDR</button><button id="curUSD" aria-pressed="false">USD</button></div>
+          <a class="avatar me" href="./profile.html" data-v="profile" aria-label="Your profile" title="Your profile" aria-current="false">DP</a>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mnav"><a href="./research.html" data-v="research" aria-current="false">Live research</a><a href="./monitor.html" data-v="monitor" aria-current="false">Monitor</a><a href="./costs.html" data-v="costs" aria-current="false">Runs &amp; costs</a><a href="./reports.html" data-v="reports" aria-current="false">Reports</a><a href="./users.html" data-v="users" aria-current="page">Users</a><a href="./settings.html" data-v="settings" aria-current="false">Settings</a><a href="./profile.html" data-v="profile" aria-current="false">Profile</a></nav>
+    </header>
+
+    <!-- LIVE RESEARCH -->
+
+
+    <!-- MONITOR -->
+
+
+    <!-- COSTS -->
+
+
+    <!-- REPORTS -->
+
+
+    <!-- USERS -->
+    <section class="view" id="v-users">
+  <div class="card"><div class="card-h"><h2>People with access</h2><span class="sub">4 active · 2 admins</span><span class="right"><button class="btn btn-primary btn-sm" id="addUser">Add user</button></span></div>
+  <div class="scroll-x" style="margin-top:8px"><table class="t ut"><thead><tr><th>User</th><th>Role</th><th>Status</th><th>Added by</th><th>Last sign-in</th></tr></thead><tbody>
+    <tr class="click" tabindex="0" role="button" aria-label="Edit access for darwin.poso@sinarmasland.com"><td><div style="font-weight:600">Darwin Poso</div><div style="color:var(--muted);font-size:12.5px">darwin.poso@sinarmasland.com</div></td><td class="ut-pill"><span class="pill p-cap">Admin</span></td><td class="ut-pill"><span class="pill p-good">Active</span></td><td class="ut-meta" data-l="Added by" style="white-space:nowrap">Setup · 01 Nov 09:12</td><td class="mono ut-meta" data-l="Last sign-in" style="white-space:nowrap">07 Nov 08:40</td></tr><tr class="click" tabindex="0" role="button" aria-label="Edit access for rina.halim@sinarmasland.com"><td><div style="font-weight:600">Rina Halim</div><div style="color:var(--muted);font-size:12.5px">rina.halim@sinarmasland.com</div></td><td class="ut-pill"><span class="pill p-cap">Admin</span></td><td class="ut-pill"><span class="pill p-good">Active</span></td><td class="ut-meta" data-l="Added by" style="white-space:nowrap">Darwin P. · 02 Nov 10:05</td><td class="mono ut-meta" data-l="Last sign-in" style="white-space:nowrap">06 Nov 17:22</td></tr><tr class="click" tabindex="0" role="button" aria-label="Edit access for andi.wijaya@sinarmasland.com"><td><div style="font-weight:600">Andi Wijaya</div><div style="color:var(--muted);font-size:12.5px">andi.wijaya@sinarmasland.com</div></td><td class="ut-pill"><span class="pill p-neutral">User</span></td><td class="ut-pill"><span class="pill p-neutral">Disabled</span></td><td class="ut-meta" data-l="Added by" style="white-space:nowrap">Darwin P. · 02 Nov 10:09</td><td class="mono ut-meta" data-l="Last sign-in" style="white-space:nowrap">03 Nov 16:15</td></tr><tr class="click" tabindex="0" role="button" aria-label="Edit access for budi.santoso@sinarmasland.com"><td><div style="font-weight:600">Budi Santoso</div><div style="color:var(--muted);font-size:12.5px">budi.santoso@sinarmasland.com</div></td><td class="ut-pill"><span class="pill p-neutral">User</span></td><td class="ut-pill"><span class="pill p-good">Active</span></td><td class="ut-meta" data-l="Added by" style="white-space:nowrap">Darwin P. · 03 Nov 14:31</td><td class="mono ut-meta" data-l="Last sign-in" style="white-space:nowrap">07 Nov 07:58</td></tr><tr class="click" tabindex="0" role="button" aria-label="Edit access for maya.putri@sinarmasland.com"><td><div style="font-weight:600">Maya Putri</div><div style="color:var(--muted);font-size:12.5px">maya.putri@sinarmasland.com</div></td><td class="ut-pill"><span class="pill p-neutral">User</span></td><td class="ut-pill"><span class="pill p-good">Active</span></td><td class="ut-meta" data-l="Added by" style="white-space:nowrap">Rina H. · 04 Nov 11:47</td><td class="mono ut-meta" data-l="Last sign-in" style="white-space:nowrap">Never</td></tr>
+  </tbody></table></div></div>
+  <div class="card"><div class="card-h"><h2>Access changes</h2><span class="sub">who changed what, newest first</span></div><div class="scroll-x" style="margin-top:8px"><table class="t ua"><thead><tr><th>When</th><th>By</th><th>Change</th></tr></thead><tbody>
+    <tr><td class="mono" style="white-space:nowrap">05 Nov 13:20</td><td style="white-space:nowrap">Darwin P.</td><td>Disabled andi.wijaya@sinarmasland.com</td></tr><tr><td class="mono" style="white-space:nowrap">04 Nov 11:47</td><td style="white-space:nowrap">Rina H.</td><td>Added maya.putri@sinarmasland.com as user</td></tr><tr><td class="mono" style="white-space:nowrap">03 Nov 14:31</td><td style="white-space:nowrap">Darwin P.</td><td>Added budi.santoso@sinarmasland.com as user</td></tr><tr><td class="mono" style="white-space:nowrap">02 Nov 10:05</td><td style="white-space:nowrap">Darwin P.</td><td>Added rina.halim@sinarmasland.com as admin</td></tr>
+  </tbody></table></div></div></section>
+
+
+    <!-- PROFILE -->
+
+  </main>
+</div>
+
+
+
+
+
+
+</body></html>

@@ -1,0 +1,96 @@
+<html data-theme="dark"><head><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RADAR Workspace</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="./assets/h/49beae011f1400dd.css">
+<link rel="stylesheet" href="./css/workspace.css">
+
+<link rel="stylesheet" href="./css/login.css">
+<script defer="" src="./data/report-display.js"></script><script defer="" src="./js/presentation.js"></script></head><body>
+
+<div class="app">
+  <aside class="rail" aria-label="Main">
+    <div class="rail-brand"><img class="rail-edm" src="./assets/h/9632587cbbc0998a.png" alt="Enterprise Data Management"><span class="rail-div"></span><img class="rail-logo" src="./assets/h/a5e1f6f12a19b6cf.png" alt="RADAR"></div>
+    <nav class="nav" id="nav">
+      <a href="./research.html" data-v="research" aria-current="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path><path d="M11 8v3l2 1.5"></path></svg>Live research<span class="badge" id="navLive">Live</span></a>
+      <a href="./monitor.html" data-v="monitor" aria-current="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 12h4l2.5-6 5 12 2.5-6h4"></path></svg>Monitor<span class="badge" style="background:rgba(255,131,102,.16);color:#FF9F88">1</span></a>
+      <a href="./costs.html" data-v="costs" aria-current="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 10h18M7 15h4"></path></svg>Runs &amp; costs</a>
+      <a href="./reports.html" data-v="reports" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 3h7l5 5v13H7z"></path><path d="M14 3v5h5M10 13h6M10 17h6"></path></svg>Reports</a>
+      <a href="./users.html" data-v="users" aria-current="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20c.6-3.6 3.2-5.5 6.5-5.5s5.9 1.9 6.5 5.5"></path><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14.8c2 .7 3.2 2.5 3.5 5.2"></path></svg>Users</a>
+      <a href="./settings.html" data-v="settings" aria-current="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"></path></svg>Settings</a>
+    </nav>
+    <div class="rail-sec" id="railMonth">November spend</div>
+    <div class="rail-spend">
+      <div class="row"><span>Workspace cap</span><b class="num" id="railSpent">Rp 3.18M</b></div>
+      <div class="rail-meter"><i id="railMeter" style="width: 32%;"></i></div>
+      <div class="row"><span id="railOf">of Rp 10M</span><span id="railPct">32%</span></div>
+    </div>
+    <a class="rail-foot" href="./profile.html" data-v="profile" aria-label="Your profile" aria-current="false"><div class="avatar">DP</div><div class="who"><span class="me-name">Darwin Poso</span><span>Enterprise Data Management</span></div></a>
+  </aside>
+
+  <main class="main">
+    <header class="top">
+      <div class="top-in">
+        <div><h1 id="vTitle" tabindex="-1">Reports</h1><div class="crumb" id="vCrumb">Board-ready briefs from a run or an issue</div></div>
+        <div class="top-actions">
+          <button class="sample" id="dataMode" role="switch" aria-checked="true" aria-label="Sample data" title="Sample data: no real searches, no real cost">Sample data</button>
+          <span class="fx">US$1 = Rp 16,420 · fixed rate</span>
+          <div class="seg" role="group" aria-label="Currency"><button id="curIDR" aria-pressed="true">IDR</button><button id="curUSD" aria-pressed="false">USD</button></div>
+          <a class="avatar me" href="./profile.html" data-v="profile" aria-label="Your profile" title="Your profile" aria-current="false">DP</a>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mnav"><a href="./research.html" data-v="research" aria-current="false">Live research</a><a href="./monitor.html" data-v="monitor" aria-current="false">Monitor</a><a href="./costs.html" data-v="costs" aria-current="false">Runs &amp; costs</a><a href="./reports.html" data-v="reports" aria-current="page">Reports</a><a href="./users.html" data-v="users" aria-current="false">Users</a><a href="./settings.html" data-v="settings" aria-current="false">Settings</a><a href="./profile.html" data-v="profile" aria-current="false">Profile</a></nav>
+    </header>
+
+    <!-- LIVE RESEARCH -->
+
+
+    <!-- MONITOR -->
+
+
+    <!-- COSTS -->
+
+
+    <!-- REPORTS -->
+    <section class="view" id="v-reports"><div class="studio">
+   <div class="card ropts">
+     <div class="field"><label for="rSrc">Built from</label><select class="input" id="rSrc"><option value="0" selected="">Desk research · BSD flooding, 2022–2026</option><option value="1">Issue · BSD flood, 7 days</option><option value="2">R-261106-0043 · live run</option></select></div>
+     <div class="f2"><div class="field"><label for="rAud">Audience</label><select class="input" id="rAud"><option selected="">Board</option><option>Management</option><option>Comms team</option></select></div><div class="field"><label for="rLang">Language</label><select class="input" id="rLang"><option value="en" selected="">English</option><option value="id">Bahasa Indonesia</option></select></div></div>
+     <div class="field"><label>Sections</label><div class="sections"><button class="sec" data-pg="1" aria-current="false"><span class="cb"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg></span><span>Cover</span><span class="pg">p1</span></button><button class="sec" data-pg="2" aria-current="false"><span class="cb"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg></span><span>Contents</span><span class="pg">p2</span></button><button class="sec" data-pg="3" aria-current="true"><span class="cb"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg></span><span>Executive summary</span><span class="pg">p3</span></button><button class="sec" data-pg="4" aria-current="false"><span class="cb"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg></span><span>What we tracked and how</span><span class="pg">p4</span></button><button class="sec" data-pg="5" aria-current="false"><span class="cb"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg></span><span>The documented record</span><span class="pg">p5</span></button><button class="sec" data-pg="6" aria-current="false"><span class="cb"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg></span><span>In pictures</span><span class="pg">p6</span></button><button class="sec" data-pg="7" aria-current="false"><span class="cb"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg></span><span>Why it recurs and why it spreads</span><span class="pg">p7</span></button><button class="sec" data-pg="8" aria-current="false"><span class="cb"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg></span><span>Viral performance</span><span class="pg">p8</span></button><button class="sec" data-pg="9" aria-current="false"><span class="cb"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg></span><span>What residents wrote</span><span class="pg">p9</span></button><button class="sec" data-pg="10" aria-current="false"><span class="cb"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg></span><span>Sinar Mas Land's public record</span><span class="pg">p10</span></button><button class="sec" data-pg="11" aria-current="false"><span class="cb"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg></span><span>Impact and risk to Sinar Mas Land</span><span class="pg">p11</span></button><button class="sec" data-pg="12" aria-current="false"><span class="cb"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg></span><span>Preventive strategy and action plan</span><span class="pg">p12</span></button><button class="sec" data-pg="13" aria-current="false"><span class="cb"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg></span><span>Appendix: sources</span><span class="pg">p13</span></button></div></div>
+     <div class="genstate" id="genState"><div style="display:flex;justify-content:space-between"><b>Draft ready for review</b><span class="mono muted">v3</span></div><div class="meter"><i style="width:100%"></i></div><span class="muted">Fact base · 19 sources · 13 read on page, 6 reported · 8 photos and post screenshots</span><span class="muted">Written for the Board.</span></div>
+   </div>
+   <div class="viewer">
+     <div class="vbar"><button class="btn btn-sm" id="pPrev" aria-label="Previous page">‹</button><span class="pgn" id="pgn">3 / 13</span><button class="btn btn-sm" id="pNext" aria-label="Next page">›</button>
+       <span style="margin-left:auto;display:flex;gap:8px;flex-wrap:wrap"><button class="btn" id="regen">Regenerate section</button><button class="btn btn-primary" id="export">Export PDF</button></span></div>
+     <div class="stage-pg"><img id="pgImg" alt="Report page 3: Executive summary" src="./assets/h/e329bd3a92ef92aa.jpg"></div>
+     <div class="thumbs" id="thumbs"><button data-pg="1" aria-current="false"><img src="./assets/h/5ec1f55966897969.jpg" alt="Page 1" loading="lazy">1</button><button data-pg="2" aria-current="false"><img src="./assets/h/1400fcb8fef22ace.jpg" alt="Page 2" loading="lazy">2</button><button data-pg="3" aria-current="true"><img src="./assets/h/e329bd3a92ef92aa.jpg" alt="Page 3" loading="lazy">3</button><button data-pg="4" aria-current="false"><img src="./assets/h/999bc5e950064638.jpg" alt="Page 4" loading="lazy">4</button><button data-pg="5" aria-current="false"><img src="./assets/h/f8c4a3217e4913a1.jpg" alt="Page 5" loading="lazy">5</button><button data-pg="6" aria-current="false"><img src="./assets/h/6918f0c5332a1292.jpg" alt="Page 6" loading="lazy">6</button><button data-pg="7" aria-current="false"><img src="./assets/h/293d9f2b24440519.jpg" alt="Page 7" loading="lazy">7</button><button data-pg="8" aria-current="false"><img src="./assets/h/1c22025cfbda133e.jpg" alt="Page 8" loading="lazy">8</button><button data-pg="9" aria-current="false"><img src="./assets/h/2c0d7f69fc428a41.jpg" alt="Page 9" loading="lazy">9</button><button data-pg="10" aria-current="false"><img src="./assets/h/d06a86f57cb13d8b.jpg" alt="Page 10" loading="lazy">10</button><button data-pg="11" aria-current="false"><img src="./assets/h/ff76d1cbb6c21b2f.jpg" alt="Page 11" loading="lazy">11</button><button data-pg="12" aria-current="false"><img src="./assets/h/85ac7fc0b16b692a.jpg" alt="Page 12" loading="lazy">12</button><button data-pg="13" aria-current="false"><img src="./assets/h/8806a775fb4c71e3.jpg" alt="Page 13" loading="lazy">13</button></div>
+   </div>
+   <div class="side-r" style="display:flex;flex-direction:column;gap:20px">
+     <div class="card"><div class="card-h"><h2>Quality checks</h2><span class="sub">run before export</span></div><div class="card-b" style="padding-top:4px"><div class="checks">
+       <div class="check"><span class="mk ok"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg></span><div><b>Answer first</b><span>The executive summary opens with the recommendation.</span></div></div>
+       <div class="check"><span class="mk ok"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg></span><div><b>Action titles</b><span>Every page title is a full-sentence takeaway.</span></div></div>
+       <div class="check"><span class="mk ok"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg></span><div><b>Every fact cited</b><span>Each fact carries a source number, S1 to S19.</span></div></div>
+       <div class="check"><span class="mk ok"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg></span><div><b>Evidence graded</b><span>A read on page, B reported, C post metadata, J judgement.</span></div></div>
+       <div class="check"><span class="mk ok"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg></span><div><b>Every exhibit sourced</b><span>17 exhibits carry a source line.</span></div></div>
+       <div class="check"><span class="mk ok"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg></span><div><b>Photos verified</b><span>Each photo has a confirmed date, place and original credit.</span></div></div>
+       <div class="check"><span class="mk warn"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 7v6M12 17h.01"></path></svg></span><div><b>Six grade B sources</b><span>Sites blocked automated reading. Check them by hand before external use.</span></div></div>
+       <div class="check"><span class="mk warn"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 7v6M12 17h.01"></path></svg></span><div><b>Volume and sentiment</b><span>Not measured. Needs a live RADAR run on this issue.</span></div></div>
+     </div></div></div>
+     <div class="card"><div class="card-h"><h2>Page notes</h2></div><div class="card-b" id="pgNote" style="font-size:13px;color:var(--fg-2);line-height:1.55">Answer first, marked as judgement. The three findings are counts from the record, each graded A.</div></div>
+   </div></div></section>
+
+    <!-- USERS -->
+
+
+
+    <!-- PROFILE -->
+
+  </main>
+</div>
+
+
+
+
+
+
+</body></html>

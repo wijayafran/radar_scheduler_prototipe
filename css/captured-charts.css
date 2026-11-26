@@ -1,0 +1,2 @@
+.chart svg[data-chart-size="mobile"] {display:none}
+@media (max-width:700px) {.chart svg[data-chart-size="desktop"]{display:none}.chart svg[data-chart-size="mobile"]{display:block}}
